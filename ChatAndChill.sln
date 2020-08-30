@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatAndChill", "ChatAndChill\ChatAndChill.csproj", "{717D9FF5-98B3-4B33-B0D0-C11A5F13F314}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DedicatedServer", "DedicatedServer\DedicatedServer.csproj", "{813EC4C4-9A18-413F-B7B9-D8A6E77983BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{717D9FF5-98B3-4B33-B0D0-C11A5F13F314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717D9FF5-98B3-4B33-B0D0-C11A5F13F314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717D9FF5-98B3-4B33-B0D0-C11A5F13F314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717D9FF5-98B3-4B33-B0D0-C11A5F13F314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{813EC4C4-9A18-413F-B7B9-D8A6E77983BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{813EC4C4-9A18-413F-B7B9-D8A6E77983BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{813EC4C4-9A18-413F-B7B9-D8A6E77983BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{813EC4C4-9A18-413F-B7B9-D8A6E77983BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0712F915-041E-489C-8858-4B1B0E3367B6}
+	EndGlobalSection
+EndGlobal
