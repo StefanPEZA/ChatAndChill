@@ -14,7 +14,6 @@ C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill\bin\Debug
 C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill\bin\Debug\ChatAndChill.exe
 C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill\bin\Debug\ChatAndChill.pdb
 C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill\bin\Debug\SimpleTCP.dll
-C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill\obj\Debug\ChatAndChill.csprojAssemblyReference.cache
 C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill\obj\Debug\ChatAndChill.ConnectClient.resources
 C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill\obj\Debug\ChatAndChill.MainApp.resources
 C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill\obj\Debug\ChatAndChill.Properties.Resources.resources

@@ -40,7 +40,7 @@ namespace ChatAndChill
             }
         }
 
-        TcpClient clientSocket = new System.Net.Sockets.TcpClient();
+        public TcpClient clientSocket = new System.Net.Sockets.TcpClient();
         NetworkStream serverStream = default(NetworkStream);
         string readData = null;
         string clientNames = "";

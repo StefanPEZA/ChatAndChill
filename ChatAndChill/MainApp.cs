@@ -52,7 +52,7 @@ namespace ChatAndChill
             DialogResult result = MessageBox.Show("Do you really want to close this app?", "Are you sure?", MessageBoxButtons.YesNo);
             if (result == DialogResult.Yes)
             {
-                Application.Exit();
+                this.Close();
             }
         }
 
@@ -166,7 +166,10 @@ namespace ChatAndChill
 
         private void MainApp_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            if (client != null)
+            {
+                client.Close();
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
