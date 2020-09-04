@@ -4,8 +4,8 @@ using System.Net.Sockets;
 using System.Text;
 using System.Collections;
 using System.Net;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.Collections.Generic;
+using System.IO;
 
 namespace DedicatedServer
 {
@@ -13,11 +13,24 @@ namespace DedicatedServer
     {
         public static Hashtable clientsList = new Hashtable();
         public static string clientNames = string.Empty;
+        private readonly static string path = "TextCache.txt";
 
         static void Main(string[] args)
         {
             try
             {
+                if (File.Exists(path))
+                {
+                    File.Delete(path);
+                }
+
+                using (FileStream fs = File.Create(path))
+                {
+                    // Add some text to file    
+                    Byte[] title = Encoding.Unicode.GetBytes("\u241E");
+                    fs.Write(title, 0, title.Length);
+                }
+
                 IPAddress ip = null;
                 string publicIp = "none";
                 string port = "8888";
@@ -69,23 +82,33 @@ namespace DedicatedServer
                     dataFromClient = dataFromClient.Substring(0, dataFromClient.IndexOf("¶"));
                     try
                     {
-                        clientsList.Add(dataFromClient, clientSocket);
-                        broadcast(dataFromClient + " Joined ", dataFromClient, false);
-                        Console.WriteLine(">>" + dataFromClient + " Joined chat room ");
-                        handleClinet client = new handleClinet();
-                        client.startClient(clientSocket, dataFromClient, clientsList);
+                        if (!clientsList.ContainsKey(dataFromClient))
+                        {
+                            clientsList.Add(dataFromClient, clientSocket);
+                            broadcast(dataFromClient + " Joined ", dataFromClient, false);
+
+                            File.AppendAllText(path, dataFromClient + " Joined" + Environment.NewLine, Encoding.Unicode);
+
+                            Console.WriteLine(">>" + dataFromClient + " Joined chat room ");
+                            handleClinet client = new handleClinet();
+                            client.startClient(clientSocket, dataFromClient, clientsList);
+                        }
+                        else
+                        {
+                            Console.WriteLine(">> Failed attempt to connect with same name: " + dataFromClient);
+                            byte[] broadcastBytes = MessageProcessor.EncodeMessage("There is someone with the same name connected! Try another name!«»");
+                            networkStream.Write(broadcastBytes, 0, broadcastBytes.Length);
+                            networkStream.Flush();
+                            networkStream = null;
+                            clientSocket.GetStream().Close();
+                            clientSocket.Close();
+                            clientSocket = null;
+                            counter -= 1;
+                        }
                     }
                     catch
                     {
-                        Console.WriteLine(">> Failed attempt to connect with same name: " + dataFromClient);
-                        byte[] broadcastBytes = MessageProcessor.EncodeMessage("There is someone with the same name connected! Try another name!«»");
-                        networkStream.Write(broadcastBytes, 0, broadcastBytes.Length);
-                        networkStream.Flush();
-                        networkStream = null;
-                        clientSocket.GetStream().Close();
-                        clientSocket.Close();
-                        clientSocket = null;
-                        counter -= 1;
+                        
                     }
 
                 }
@@ -118,14 +141,22 @@ namespace DedicatedServer
         public static List<DictionaryEntry> disconnectedEntry = new List<DictionaryEntry>();
         public static void broadcast(string msg, string uName, bool flag)
         {
+            if (flag == true)
+            {
+                    File.AppendAllText(path ,uName + " : " + msg + Environment.NewLine, Encoding.Unicode);
+            }
+            else
+            {
+                    File.AppendAllText(path, msg + Environment.NewLine, Encoding.Unicode);
+            }
             UpdateClientsNames();
-            disconnectedEntry.Clear();
             foreach (DictionaryEntry Item in clientsList)
             {
                 try
                 {
                     TcpClient broadcastSocket;
                     broadcastSocket = (TcpClient)Item.Value;
+                        
                     NetworkStream broadcastStream = broadcastSocket.GetStream();
                     byte[] broadcastBytes = null;
 
@@ -158,9 +189,8 @@ namespace DedicatedServer
 
             foreach(DictionaryEntry item in disconnectedEntry)
             {
-                ((TcpClient)item.Value).GetStream().Close();
-                ((TcpClient)item.Value).Close();
-                clientsList.Remove((string)item.Key);
+                if (clientsList.ContainsKey(item.Key))
+                    clientsList.Remove((string)item.Key);
                 broadcast((string)item.Key + " left the chat!", (string)item.Key, false);
                 Console.WriteLine(">>" + (string)item.Key + " Disconnected from the server!" + Environment.NewLine);
             }
@@ -200,33 +230,27 @@ namespace DedicatedServer
             {
                 while ((true))
                 {
-
                     requestCount = requestCount + 1;
                     NetworkStream networkStream = clientSocket.GetStream();
                     networkStream.Read(bytesFrom, 0, bytesFrom.Length);
                     dataFromClient = MessageProcessor.DecodeMessage(bytesFrom);
                     dataFromClient = dataFromClient.Substring(0, dataFromClient.IndexOf("¶"));
-                    Console.WriteLine(">>From client - " + clNo + " : " + dataFromClient);
                     rCount = Convert.ToString(requestCount);
                     Program.broadcast(dataFromClient, clNo, true);
+                    Console.WriteLine(">>From client - " + clNo + " : " + dataFromClient);
                 }//end while
             }
             catch
             {
-                if (clientSocket.Connected)
+                if (Program.clientsList.ContainsKey(clNo))
                 {
-                    Program.clientsList.Remove(clNo);
-                    clientSocket.GetStream().Close();
-                    clientSocket.Close();
-                    clientsList.Remove(clNo);
-                    Program.broadcast(clNo + " left the chat!", clNo, false);
-                    Console.WriteLine(">>" + clNo + " Disconnected from the server!");
+                     Program.clientsList.Remove(clNo);
+                     clientsList.Remove(clNo);
                 }
+                Program.broadcast(clNo + " left the chat!", clNo, false);
+                Console.WriteLine(">>" + clNo + " Disconnected from the server!" + Environment.NewLine);
             }
-            finally
-            {
-                Thread.CurrentThread.Abort();
-            }
+            return;
         }//end doChat
     } //end class handleClinet
 }//end namespace

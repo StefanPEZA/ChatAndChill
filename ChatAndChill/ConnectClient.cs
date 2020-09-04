@@ -52,17 +52,21 @@ namespace ChatAndChill
         {
             try
             {
-                if (serverStream != null)
-                {
-                    readData = "Disconnecting from Chat Server ...";
-                    msg();
-                    clientSocket.GetStream().Close();
+                if (serverStream != default)
+                    serverStream.Close();
+                readData = "Disconnecting from Chat Server ...";
+                msg();
+
+                if (clientSocket.Connected)
                     clientSocket.Close();
-                    clientSocket = new System.Net.Sockets.TcpClient();
-                    serverStream = default(NetworkStream);
-                }
             }
-            catch { }
+            catch {
+            }
+            finally
+            {
+                clientSocket = new System.Net.Sockets.TcpClient();
+                serverStream = default(NetworkStream);
+            }
         }
 
         public void Send_Click()
@@ -146,8 +150,8 @@ namespace ChatAndChill
             }
             catch
             {
-                Thread.CurrentThread.Abort();
             }
+            return;
         }
 
 
@@ -168,8 +172,7 @@ namespace ChatAndChill
 
         private void ConnectClient_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (clientSocket.Connected)
-                Disconnect();
+            Disconnect();
             mainApp.client = null;
         }
     }
