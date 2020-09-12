@@ -8,6 +8,6 @@ Closing the main application will disconnect you from server, and all messages w
 
 I rewriten the entire app code, using a new package for TCP called EasyTCP.
 
-You can find the package here: 
--on nuget:https://www.nuget.org/packages/EasyTcp/
--on github:https://github.com/Job79/EasyTcp
+EasyTCP - on nuget:https://www.nuget.org/packages/EasyTcp/
+
+EasyTCP - on github:https://github.com/Job79/EasyTcp
