@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "j3J4YglRCBlpBc7UUyO+aOPrTnZBdXdS7D7eFOGtO5TKsyMgOJfIDDaM7+4MqTzu7D5X+cikaxvcagpgYjyflA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\stefa\\Documents\\GitHub\\ChatAndChill\\ChatAndChill\\DedicatedServer\\DedicatedServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\stefa\\.nuget\\packages\\easytcp\\3.6.5\\easytcp.3.6.5.nupkg.sha512",
+    "C:\\Users\\stefa\\.nuget\\packages\\easytcp.actions\\2.5.3\\easytcp.actions.2.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

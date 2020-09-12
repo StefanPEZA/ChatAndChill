@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatAndChill_2.0.0", "ChatAndChill_2.0.0\ChatAndChill_2.0.0.csproj", "{84D1FE7D-294A-49E1-9E51-F6C6B4F8BDF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DedicatedServer", "DedicatedServer\DedicatedServer.csproj", "{7F42469D-8275-43C3-85A6-9023F21C1053}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84D1FE7D-294A-49E1-9E51-F6C6B4F8BDF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D1FE7D-294A-49E1-9E51-F6C6B4F8BDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D1FE7D-294A-49E1-9E51-F6C6B4F8BDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D1FE7D-294A-49E1-9E51-F6C6B4F8BDF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F42469D-8275-43C3-85A6-9023F21C1053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F42469D-8275-43C3-85A6-9023F21C1053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F42469D-8275-43C3-85A6-9023F21C1053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F42469D-8275-43C3-85A6-9023F21C1053}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {024940ED-8E68-4108-8394-AF90ECB4C541}
+	EndGlobalSection
+EndGlobal

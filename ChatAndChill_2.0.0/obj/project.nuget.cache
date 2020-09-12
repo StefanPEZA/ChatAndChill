@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AnqMWbPgnfnBMQrB5mySEgyhPtR8Qe3nOCHRTzHdV3tNsKm5kApLUCkP/yowczzuL/B300cvrMGJqpLxBiSurg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\stefa\\Documents\\GitHub\\ChatAndChill\\ChatAndChill\\ChatAndChill_2.0.0\\ChatAndChill_2.0.0.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\stefa\\.nuget\\packages\\easytcp\\3.6.5\\easytcp.3.6.5.nupkg.sha512",
+    "C:\\Users\\stefa\\.nuget\\packages\\easytcp.actions\\2.5.3\\easytcp.actions.2.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

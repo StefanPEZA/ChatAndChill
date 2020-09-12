@@ -1,0 +1,148 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "EasyTcp/3.6.5": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/EasyTcp3.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/EasyTcp3.dll": {}
+        }
+      },
+      "EasyTcp.Actions/2.5.3": {
+        "type": "package",
+        "dependencies": {
+          "EasyTcp": "3.6.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/EasyTcp3.Actions.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/EasyTcp3.Actions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EasyTcp/3.6.5": {
+      "sha512": "zmbejWXGLtXq2pUTdf/Qhzjj+c/anMl/J/M5A8sZ6WIEVzAQGRBwbTM3ja2uuvKY3KavoRUWr3VWSAt/uY32eg==",
+      "type": "package",
+      "path": "easytcp/3.6.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "easytcp.3.6.5.nupkg.sha512",
+        "easytcp.nuspec",
+        "lib/netcoreapp3.1/EasyTcp3.dll",
+        "lib/netcoreapp3.1/EasyTcp3.xml",
+        "lib/netstandard1.3/EasyTcp3.dll",
+        "lib/netstandard1.3/EasyTcp3.xml",
+        "lib/netstandard1.4/EasyTcp3.dll",
+        "lib/netstandard1.4/EasyTcp3.xml",
+        "lib/netstandard1.5/EasyTcp3.dll",
+        "lib/netstandard1.5/EasyTcp3.xml",
+        "lib/netstandard1.6/EasyTcp3.dll",
+        "lib/netstandard1.6/EasyTcp3.xml",
+        "lib/netstandard1.7/EasyTcp3.dll",
+        "lib/netstandard1.7/EasyTcp3.xml",
+        "lib/netstandard2.0/EasyTcp3.dll",
+        "lib/netstandard2.0/EasyTcp3.xml",
+        "lib/netstandard2.1/EasyTcp3.dll",
+        "lib/netstandard2.1/EasyTcp3.xml"
+      ]
+    },
+    "EasyTcp.Actions/2.5.3": {
+      "sha512": "fnUZKLoZWH3IOBHukxq4n7KHtuZU50eI+9nNxOULBMLa1UV3sWW8esbpAsleikkpq3Yg+sb2E6fAr0xj39TslA==",
+      "type": "package",
+      "path": "easytcp.actions/2.5.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "easytcp.actions.2.5.3.nupkg.sha512",
+        "easytcp.actions.nuspec",
+        "lib/netcoreapp3.1/EasyTcp3.Actions.dll",
+        "lib/netcoreapp3.1/EasyTcp3.Actions.xml",
+        "lib/netstandard2.0/EasyTcp3.Actions.dll",
+        "lib/netstandard2.0/EasyTcp3.Actions.xml",
+        "lib/netstandard2.1/EasyTcp3.Actions.dll",
+        "lib/netstandard2.1/EasyTcp3.Actions.xml"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "EasyTcp >= 3.6.5",
+      "EasyTcp.Actions >= 2.5.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\stefa\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\stefa\\Documents\\GitHub\\ChatAndChill\\ChatAndChill\\ChatAndChill_2.0.0\\ChatAndChill_2.0.0.csproj",
+      "projectName": "ChatAndChill_2.0.0",
+      "projectPath": "C:\\Users\\stefa\\Documents\\GitHub\\ChatAndChill\\ChatAndChill\\ChatAndChill_2.0.0\\ChatAndChill_2.0.0.csproj",
+      "packagesPath": "C:\\Users\\stefa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\stefa\\Documents\\GitHub\\ChatAndChill\\ChatAndChill\\ChatAndChill_2.0.0\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\stefa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "EasyTcp": {
+            "target": "Package",
+            "version": "[3.6.5, )"
+          },
+          "EasyTcp.Actions": {
+            "target": "Package",
+            "version": "[2.5.3, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

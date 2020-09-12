@@ -1,6 +1,0 @@
-C:\Users\stefa\Desktop\ChatAndChill\ChatAndChill\ChatAndChill\bin\Debug\DedicatedServer.exe.config
-C:\Users\stefa\Desktop\ChatAndChill\ChatAndChill\ChatAndChill\bin\Debug\DedicatedServer.exe
-C:\Users\stefa\Desktop\ChatAndChill\ChatAndChill\ChatAndChill\bin\Debug\DedicatedServer.pdb
-C:\Users\stefa\Desktop\ChatAndChill\ChatAndChill\DedicatedServer\obj\Debug\DedicatedServer.csproj.CoreCompileInputs.cache
-C:\Users\stefa\Desktop\ChatAndChill\ChatAndChill\DedicatedServer\obj\Debug\DedicatedServer.exe
-C:\Users\stefa\Desktop\ChatAndChill\ChatAndChill\DedicatedServer\obj\Debug\DedicatedServer.pdb
