@@ -1,0 +1,60 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ChatAndChill_2.0.0/1.0.0": {
+        "dependencies": {
+          "EasyTcp": "3.6.5",
+          "EasyTcp.Actions": "2.5.3"
+        },
+        "runtime": {
+          "ChatAndChill_2.0.0.dll": {}
+        }
+      },
+      "EasyTcp/3.6.5": {
+        "runtime": {
+          "lib/netcoreapp3.1/EasyTcp3.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "EasyTcp.Actions/2.5.3": {
+        "dependencies": {
+          "EasyTcp": "3.6.5"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/EasyTcp3.Actions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ChatAndChill_2.0.0/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EasyTcp/3.6.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zmbejWXGLtXq2pUTdf/Qhzjj+c/anMl/J/M5A8sZ6WIEVzAQGRBwbTM3ja2uuvKY3KavoRUWr3VWSAt/uY32eg==",
+      "path": "easytcp/3.6.5",
+      "hashPath": "easytcp.3.6.5.nupkg.sha512"
+    },
+    "EasyTcp.Actions/2.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fnUZKLoZWH3IOBHukxq4n7KHtuZU50eI+9nNxOULBMLa1UV3sWW8esbpAsleikkpq3Yg+sb2E6fAr0xj39TslA==",
+      "path": "easytcp.actions/2.5.3",
+      "hashPath": "easytcp.actions.2.5.3.nupkg.sha512"
+    }
+  }
+}

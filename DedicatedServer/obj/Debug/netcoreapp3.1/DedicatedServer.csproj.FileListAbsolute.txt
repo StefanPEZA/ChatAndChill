@@ -1,0 +1,14 @@
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill_2.0.0\bin\Debug\netcoreapp3.1\DedicatedServer.exe
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill_2.0.0\bin\Debug\netcoreapp3.1\DedicatedServer.deps.json
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill_2.0.0\bin\Debug\netcoreapp3.1\DedicatedServer.runtimeconfig.json
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill_2.0.0\bin\Debug\netcoreapp3.1\DedicatedServer.runtimeconfig.dev.json
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill_2.0.0\bin\Debug\netcoreapp3.1\DedicatedServer.dll
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\ChatAndChill_2.0.0\bin\Debug\netcoreapp3.1\DedicatedServer.pdb
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\DedicatedServer\obj\Debug\netcoreapp3.1\DedicatedServer.csprojAssemblyReference.cache
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\DedicatedServer\obj\Debug\netcoreapp3.1\DedicatedServer.AssemblyInfoInputs.cache
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\DedicatedServer\obj\Debug\netcoreapp3.1\DedicatedServer.AssemblyInfo.cs
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\DedicatedServer\obj\Debug\netcoreapp3.1\DedicatedServer.csproj.CoreCompileInputs.cache
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\DedicatedServer\obj\Debug\netcoreapp3.1\DedicatedServer.csproj.CopyComplete
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\DedicatedServer\obj\Debug\netcoreapp3.1\DedicatedServer.dll
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\DedicatedServer\obj\Debug\netcoreapp3.1\DedicatedServer.pdb
+C:\Users\stefa\Documents\GitHub\ChatAndChill\ChatAndChill\DedicatedServer\obj\Debug\netcoreapp3.1\DedicatedServer.genruntimeconfig.cache
